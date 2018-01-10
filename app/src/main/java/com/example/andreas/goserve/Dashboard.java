@@ -28,7 +28,7 @@ public class Dashboard extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             Intent intent = new Intent (Dashboard.this ,MejaPelanggan.class);
             Dashboard.this.startActivity(intent);
-            finish();
+//            finish();
         }
     });
 
@@ -40,7 +40,7 @@ public class Dashboard extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent (Dashboard.this ,ReportMenu.class);
                 Dashboard.this.startActivity(intent);
-                finish();
+//                finish();
             }
         });
 
@@ -52,7 +52,7 @@ public class Dashboard extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent (Dashboard.this ,StockMenu.class);
                 Dashboard.this.startActivity(intent);
-                finish();
+//                finish();
             }
         });
 
@@ -64,7 +64,7 @@ public class Dashboard extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent (Dashboard.this ,BranchMenu.class);
                 Dashboard.this.startActivity(intent);
-                finish();
+//                finish();
             }
         });
 
@@ -76,7 +76,7 @@ public class Dashboard extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent (Dashboard.this ,MejaPelanggan.class);
                 Dashboard.this.startActivity(intent);
-                finish();
+//                finish();
             }
         });
 
@@ -88,7 +88,7 @@ public class Dashboard extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent (Dashboard.this ,MejaPelanggan.class);
                 Dashboard.this.startActivity(intent);
-                finish();
+//                finish();
             }
         });
     }
