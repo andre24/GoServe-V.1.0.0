@@ -44,7 +44,7 @@
             android:layout_height="150dp"
             android:layout_margin="10dp"
             android:background="#CDDC39"
-            android:drawableTop="@drawable/menu_table"
+            android:drawableTop="@drawable/menu_about"
             android:text="About "
             android:textStyle="bold"
             />
@@ -86,7 +86,7 @@
             android:layout_height="150dp"
             android:layout_margin="10dp"
             android:background="#CDDC39"
-            android:drawableTop="@drawable/menu_table"
+            android:drawableTop="@drawable/menu_exit"
             android:text="EXIT"
             android:textStyle="bold"
             />

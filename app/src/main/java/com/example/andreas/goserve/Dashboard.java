@@ -9,6 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.andreas.goserve.menu.AboutMenu;
+import com.example.andreas.goserve.menu.BranchMenu;
+import com.example.andreas.goserve.menu.MejaPelanggan;
+import com.example.andreas.goserve.menu.ReportMenu;
+import com.example.andreas.goserve.menu.StockMenu;
+
 public class Dashboard extends AppCompatActivity {
     Button button1, button2, button3,
             button4, button5, button6;
@@ -74,7 +80,7 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"About Sukses",
                         Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent (Dashboard.this ,MejaPelanggan.class);
+                Intent intent = new Intent (Dashboard.this ,AboutMenu.class);
                 Dashboard.this.startActivity(intent);
 //                finish();
             }
@@ -84,11 +90,12 @@ public class Dashboard extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Exit Sukses",
-                        Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent (Dashboard.this ,MejaPelanggan.class);
-                Dashboard.this.startActivity(intent);
+//                Toast.makeText(getApplicationContext(),"Exit Sukses",
+//                        Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent (Dashboard.this ,MejaPelanggan.class);
+//                Dashboard.this.startActivity(intent);
 //                finish();
+                onBackPressed();
             }
         });
     }

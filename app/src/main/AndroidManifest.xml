@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/menu_branch"
+        android:icon="@drawable/ic_cashier"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -17,15 +17,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".Dashboard" />
-        <activity android:name=".MejaPelanggan"
-            android:parentActivityName=".Dashboard"/>
-        <activity android:name=".ReportMenu"
-            android:parentActivityName=".Dashboard"/>
         <activity
-            android:name=".StockMenu"
+            android:name=".menu.MejaPelanggan"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".menu.ReportMenu"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".menu.StockMenu"
             android:label="@string/title_activity_stock_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".BranchMenu"></activity>
+        <activity android:name=".menu.BranchMenu" />
+        <activity android:name=".menu.AboutMenu"></activity>
     </application>
 
 </manifest>

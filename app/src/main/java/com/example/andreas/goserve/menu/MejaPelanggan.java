@@ -1,4 +1,4 @@
-package com.example.andreas.goserve;
+package com.example.andreas.goserve.menu;
 
 import android.content.ClipData;
 import android.content.DialogInterface;
@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.andreas.goserve.R;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -43,27 +45,9 @@ public class MejaPelanggan extends AppCompatActivity {
     }
 
     public void onBackPressed(){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(false);
-        builder.setMessage("Do you want to Exit ?");
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                finish();
-            }
-        });
-        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-            }
-        });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        /*
         super.onBackPressed();
         Toast.makeText(this, "Back pressed", Toast.LENGTH_LONG);
-        */
+
     }
 
 

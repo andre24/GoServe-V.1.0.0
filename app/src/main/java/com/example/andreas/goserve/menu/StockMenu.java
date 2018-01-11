@@ -1,4 +1,4 @@
-package com.example.andreas.goserve;
+package com.example.andreas.goserve.menu;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import com.example.andreas.goserve.R;
 
 public class StockMenu extends AppCompatActivity {
 
@@ -29,23 +31,7 @@ public class StockMenu extends AppCompatActivity {
     }
 
     public void onBackPressed(){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(false);
-        builder.setMessage("Do you want to Exit ?");
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                finish();
-            }
-        });
-        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-            }
-        });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+        super.onBackPressed();
     }
 
 }
